@@ -1,0 +1,254 @@
+/* Global Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f7f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(120deg, #2e7d32, #43a047);
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.3em;
+}
+
+header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+  margin-top: 1em;
+}
+
+nav button {
+  margin: 0.4em;
+  padding: 0.6em 1.4em;
+  font-size: 1em;
+  background: #ffffff;
+  color: #2e7d32;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+nav button:hover {
+  background: #e8f5e9;
+  border-color: #66bb6a;
+}
+
+/* Main Layout */
+main {
+  max-width: 960px;
+  margin: 2em auto;
+  padding: 1.5em;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+h2 {
+  color: #2e7d32;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  margin-top: 1.5em;
+  color: #388e3c;
+}
+
+ul {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+/* Tabs */
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+/* Build Controls */
+.controls {
+  text-align: center;
+  margin: 1.5em 0 1em;
+}
+
+.controls select {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: #f9f9f9;
+  font-weight: 500;
+}
+
+.controls button {
+  margin-top: 1em;
+  padding: 0.6em 1.5em;
+  font-size: 1em;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #b71c1c;
+}
+
+/* Grid */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+#grid div {
+  width: 60px;
+  height: 60px;
+  background: #c8e6c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#grid div:hover {
+  background: #a5d6a7;
+}
+
+#grid div.added {
+  background-color: #66bb6a;
+  color: white;
+}
+
+/* Scoreboard */
+#scoreboard {
+  background: #f1f8e9;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#scoreboard p {
+  margin: 0.4em 0;
+  font-weight: 500;
+}
+
+/* Quiz Section */
+#quiz-container {
+  text-align: center;
+  padding: 1em;
+}
+
+#quiz-question {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+#quiz-options button {
+  display: block;
+  margin: 0.5em auto;
+  padding: 0.6em 1.4em;
+  font-size: 1em;
+  border: none;
+  border-radius: 25px;
+  background-color: #43a047;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#quiz-options button:hover {
+  background-color: #2e7d32;
+}
+
+#quiz-feedback {
+  font-size: 1.1em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+#reset-quiz-btn {
+  margin-top: 1em;
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6em 1.4em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#reset-quiz-btn:hover {
+  background-color: #ef6c00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #e0f2f1;
+  color: #004d40;
+  font-weight: 500;
+  margin-top: 3em;
+  border-top: 2px solid #b2dfdb;
+}
+#next-question-btn {
+  margin-top: 1em;
+  padding: 0.6em 1.6em;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#next-question-btn:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+}

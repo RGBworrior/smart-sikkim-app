@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Sikkim - Smart City Designer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌆 Smart Sikkim</h1>
+    <p>Designing a Sustainable, Tech-Driven Future</p>
+    <nav>
+      <button onclick="showTab('learn')">📘 Learn</button>
+      <button onclick="showTab('build')">🛠️ Build</button>
+      <button onclick="showTab('quiz')">❓ Quiz</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- LEARN TAB -->
+   <div id="learn" class="tab active">
+  <section>
+    <h2>🏙️ What is a Smart City?</h2>
+    <p>
+      A Smart City is an urban area that uses technology, data, and innovation to improve how it functions—making life easier, safer, and more sustainable for its residents. It focuses on efficient services, clean environment, and responsive governance.
+    </p>
+  </section>
+
+  <section>
+    <h2>🌟 Core Features of a Smart City</h2>
+
+    <h3>🏛️ Smart Governance</h3>
+    <ul>
+      <li>E-services and mobile apps</li>
+      <li>Transparent decision-making</li>
+      <li>Citizen participation platforms</li>
+    </ul>
+
+    <h3>🚍 Smart Mobility</h3>
+    <ul>
+      <li>Traffic sensors and smart signals</li>
+      <li>Electric buses and bike sharing</li>
+      <li>Real-time travel apps</li>
+    </ul>
+
+    <h3>🌿 Smart Environment</h3>
+    <ul>
+      <li>Solar energy and wind power</li>
+      <li>Pollution control systems</li>
+      <li>Waste-to-energy technologies</li>
+    </ul>
+
+    <h3>🏥 Smart Living</h3>
+    <ul>
+      <li>Online health consultations</li>
+      <li>E-learning and digital classrooms</li>
+      <li>Wi-Fi zones and public safety apps</li>
+    </ul>
+
+    <h3>💼 Smart Economy</h3>
+    <ul>
+      <li>Startup zones and tech parks</li>
+      <li>Digital payment systems</li>
+      <li>AI-powered service delivery</li>
+    </ul>
+
+    <h3>🏗️ Smart Infrastructure</h3>
+    <ul>
+      <li>Smart lighting and metering</li>
+      <li>Automated water management</li>
+      <li>Earthquake and disaster sensors (important in Himalayan region)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📈 Why Smart Cities Matter</h2>
+    <ul>
+      <li>✅ Reduce pollution and traffic</li>
+      <li>✅ Improve health and safety</li>
+      <li>✅ Save energy and natural resources</li>
+      <li>✅ Provide better public services</li>
+      <li>✅ Make cities future-ready and resilient</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🇮🇳 Smart Cities in India</h2>
+    <p>India's Smart Cities Mission aims to develop 100 cities with sustainable and citizen-centric development.</p>
+    <ul>
+      <li><strong>Pune</strong> – Smart traffic & waste apps</li>
+      <li><strong>Surat</strong> – Flood response technology</li>
+      <li><strong>Bhubaneswar</strong> – Integrated education and transport</li>
+      <li><strong>Gangtok, Sikkim</strong> – Solar lighting, waste management, green mobility</li>
+    </ul>
+  </section>
+</div>
+
+
+    <!-- BUILD TAB -->
+    <div id="build" class="tab">
+      <h2>🏗️ Build Your Smart City</h2>
+
+      <div class="controls">
+        <label>Select Building:</label>
+        <select id="buildingType">
+          <option value="house">🏠 House</option>
+          <option value="solar">☀️ Solar Panel</option>
+          <option value="bus">🚍 E-Bus</option>
+          <option value="recycle">♻️ Recycling Center</option>
+        </select>
+      </div>
+
+      <div id="grid"></div>
+
+      <div id="scoreboard">
+        <p>🏠 Houses: <span id="count-house">0</span></p>
+        <p>☀️ Solar Panels: <span id="count-solar">0</span></p>
+        <p>🚍 E-Buses: <span id="count-bus">0</span></p>
+        <p>♻️ Recycle Centers: <span id="count-recycle">0</span></p>
+        <p><strong>Total Smart Score: <span id="score">0</span></strong></p>
+      </div>
+
+      <div class="controls">
+        <button onclick="clearGrid()">🧹 Clear City</button>
+      </div>
+    </div>
+
+    <!-- QUIZ TAB -->
+    <div id="quiz" class="tab">
+      <h2>❓ Smart City Quiz</h2>
+     <div id="quiz-container">
+  <p id="quiz-question"></p>
+  <div id="quiz-options"></div>
+  <button id="next-question-btn" onclick="nextQuestion()">Next ➡️</button>
+  <p id="quiz-feedback"></p>
+  <p><strong>Your Score: <span id="quiz-score">0</span></strong></p>
+  <button id="reset-quiz-btn" onclick="resetQuiz()">🔄 Restart Quiz</button>
+</div>
+        <p><strong>Your Score: <span id="quiz-score">0</span></strong></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>🌱 STEM application created by Yatharth Singh Negi</p>
+    <p> Class: 11th A </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
